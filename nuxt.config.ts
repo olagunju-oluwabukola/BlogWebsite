@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
   css: ['~/main.css'],
-  modules: ['@nuxt/icon'],
+  modules: ['@nuxt/icon', '@nuxt/image'],
     icon: {
     mode: 'css',
     cssLayer: 'base'
@@ -16,4 +16,3 @@ export default defineNuxtConfig({
     ],
   },
 })
-

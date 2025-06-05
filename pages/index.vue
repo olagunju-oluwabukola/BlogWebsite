@@ -1,7 +1,8 @@
 <template>
-    <header>
-        Hope you are having a great day!
-    </header>
+    <HomeHero/>
+    <HomeStats/>
+    <HomeExplore/>
+    <HomeFeature/>
 </template>
 
 <script setup>
