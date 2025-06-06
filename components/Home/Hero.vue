@@ -58,11 +58,6 @@
         </div>
         
       </div>
-
-
-
-
-    
   </section>
 </template>
 
