@@ -14,7 +14,7 @@ const state = reactive({
 </script>
 
 <template>
-  <header class="text-white py-4 px-4 md:px-16 border-b border-gray-800">
+  <header class=" bg-[#1E1E1E] text-white py-4 px-4 md:px-16 border-b border-gray-900">
     <div class="max-w-7xl mx-auto flex items-center justify-between">
      
       <NuxtLink to="/" class="flex items-center space-x-2">

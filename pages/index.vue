@@ -1,7 +1,5 @@
 <template>
     <HomeHero/>
-    <HomeStats/>
-    <HomeExplore/>
     <HomeFeature/>
 </template>
 
