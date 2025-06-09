@@ -44,8 +44,7 @@ const state = reactive({
         <NuxtIcon :name="state.isMenuOpen ? 'x' : 'menu'" class="w-6 h-6" />
       </button>
     </div>
-
-
+ 
     <div v-if="state.isMenuOpen" class="md:hidden bg-gray-900 border-t border-gray-800">
       <nav class="flex flex-col space-y-2 p-4">
         <NuxtLink
@@ -74,3 +73,4 @@ const state = reactive({
 
 
 
+  
