@@ -1,12 +1,12 @@
 <template>
-  <div class="min-h-screen p-6 text-white bg-black">
+  <div class=" px-6 md:px-20  p-6 text-white bg-black">
     <NuxtLink to="/" class="text-yellow-400 mb-4 block">← Back</NuxtLink>
 
     <h1 class="text-3xl font-bold mb-2">{{ blog.title }}</h1>
-    <p class="text-sm text-gray-400">{{ blog.category }} | {{ formatDate(blog.date) }}</p>
+    <p class="text-[10px] md:text-sm text-gray-400">{{ blog.category }} | {{ formatDate(blog.date) }}</p>
 
-    <p class="my-6">{{ blog.description }}</p>
-    <p>{{ blog.content}}</P>
+    <p class="my-6 text-[10px] md:text-sm">{{ blog.description }}</p>
+    <p class="my-6 text-[10px] md:text-sm leading-loose">{{ blog.content}}</P>
   </div>
 </template>
 

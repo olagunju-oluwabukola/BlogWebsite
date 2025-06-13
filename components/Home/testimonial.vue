@@ -2,7 +2,6 @@
   <section class=" text-white py-16">
     <div class="container mx-auto px-4">
       
-
       <div class="grid md:grid-cols-3 gap-6">
         <div
           v-for="testimonial in testimonials"
