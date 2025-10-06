@@ -31,7 +31,7 @@
 import img1 from '~/assets/images/marsImg.svg';
 import img2 from '~/assets/images/BlockchainVideo.svg';
 import img3 from '~/assets/images/mentalHealthVideo.svg';
-import img4 from '~/assets/images/investmentVideo.svg';
+import img4 from '~/assets/images/InvestmentVideo.svg';
 const videos = [
   {
     title: 'Mars Exploration: Unveiling Alien Landscapes',
