@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-[#1e1e1e] text-white py-10 md:py-20 px-6">
+  <section class="bg-[#1e1e1e] text-white py-6 md:py-20 px-6">
     <div class="max-w-5xl mx-auto ">
       <p class="uppercase text-[10px] md:text-sm text-yellow-400 font-semibold mb-2 md:mb-6">Learn. Connect. Revolutionize.</p>
       <div class="md:flex mt-10  md:mb-8 gap-4 md:gap-8">

@@ -1,5 +1,5 @@
 <template>
-  <section class=" text-white py-16 px-4 md:px-20">
+  <section class=" text-white md:py-16 px-6 md:px-20">
     <div class="grid md:grid-cols-2 gap-8 items-start">
       <div class="bg-[#111] p-6 rounded-lg">
         <h3 class="text-xl font-semibold mb-2">Ebooks</h3>

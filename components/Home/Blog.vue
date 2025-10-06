@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-black text-white px-20 py-10 ">
+  <section class="bg-black text-white px-6 md:px-20 md:py-10 mb-10 ">
     <div class=" mx-auto">
       <HomeBlogTabs :categories="categories" v-model:activeTab="activeTab" />
       <HomeBlogList :blogs="filteredBlogs" />

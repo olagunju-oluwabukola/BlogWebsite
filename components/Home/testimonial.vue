@@ -1,6 +1,6 @@
 <template>
-  <section class=" text-white px-20 py-10">
-    <div class="container mx-auto px-4">
+  <section class=" text-white px-6 md:px-20 md:py-10 mb-8">
+    <div class="container mx-auto ">
 
       <div class="grid md:grid-cols-3 gap-6">
         <div
