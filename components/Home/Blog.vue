@@ -1,6 +1,6 @@
 <template>
-  <section class="bg-black text-white py-10 px-4">
-    <div class="max-w-6xl mx-auto">
+  <section class="bg-black text-white px-20 py-10 ">
+    <div class=" mx-auto">
       <HomeBlogTabs :categories="categories" v-model:activeTab="activeTab" />
       <HomeBlogList :blogs="filteredBlogs" />
     </div>

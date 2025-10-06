@@ -1,17 +1,17 @@
 <template>
-  <section class="bg-[#1e1e1e] text-white py-20 px-6">
+  <section class="bg-[#1e1e1e] text-white py-10 md:py-20 px-6">
     <div class="max-w-5xl mx-auto ">
       <p class="uppercase text-[10px] md:text-sm text-yellow-400 font-semibold mb-2 md:mb-6">Learn. Connect. Revolutionize.</p>
-      <div class="flex mb-4 md:mb-8 gap-4 md:gap-8">
-          <img src='/assets/images/logo.svg' alt='logo'/>
+      <div class="md:flex mt-10  md:mb-8 gap-4 md:gap-8">
+          <img src='/assets/images/logo.svg' alt='logo' class="h-14 w-14 md:h-32 md:w-32"/>
       <div>
-        <h2 class="text-xl md:text-4xl font-bold mb-6">Be Part of the Future Tech Revolution</h2>
+        <h2 class="text-xl md:text-4xl font-bold mb-6 mt-6">Be Part of the Future Tech Revolution</h2>
       <p class="text-gray-400 mb-10 max-w-3xl mx-auto text-sm md:text-base">
         Stay ahead of the curve with FutureTech. Explore our comprehensive resources, stay connected through community forums, and participate in exclusive events to shape tomorrow's innovations.
       </p>
       </div>
       </div>
-    
+
       <div class="grid md:grid-cols-3 gap-6 bg-black rounded p-6">
         <div class="bg-[#1e1e1e] p-6 rounded-lg text-left">
           <Icon name="uil:file-alt" class="text-yellow-400 text-3xl mb-4" />

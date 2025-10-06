@@ -1,8 +1,8 @@
 <template>
     <div class="min-h-screen bg-black text-white ">
-    <div class="grid md:flex justify-between gap-4 md:gap-20 lg:gap-26 items-start border-gray-800 pt-10 md:mb-16 py-12 px-4 lg:px-24">
+    <div class="grid md:flex justify-between gap-4 md:gap-20 lg:gap-26 items-start border-gray-800 pt-10 md:mb-16 px-20">
       <div class="md:col-span-1 flex flex-col items-start m-auto">
-        <div class="flex items-center space-x-2 mb-3 md:mb-4 ">
+        <div class="flex items-center space-x-2 mb-3 md:mb-4">
          <img src="~/assets/images/blogIcon.svg" alt="Blog Icon" class="w-6 h-6 md:w-8 md:h-8">
           <h2 class="text-lg md:text-3xl font-semibold">Future Technology Blog</h2>
         </div>
@@ -22,8 +22,8 @@
     </div>
 
     <div class="grid md:flex justify-between gap-4 md:gap-20 lg:gap-26 items-start border-t border-gray-800 md:pt-10 mb-16 py-12 px-4 lg:px-24">
-      <div class="md:col-span-1 flex flex-col items-start m-auto">
-        <div class="flex items-center space-x-2 mb-3 md:mb-4 ">
+      <div class="md:col-span-1 flex flex-col items-start  md:pr-16 m-auto">
+        <div class="flex items-center space-x-2 mb-3 md:mb-4">
             <img src="~/assets/images/researchIcon.svg" alt="Research Icon" class="w-6 h-6 md:w-8 md:h-8">
           <h2 class="text-lg md:text-3xl font-semibold">Research Insights Blogs</h2>
         </div>

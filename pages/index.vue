@@ -1,5 +1,6 @@
 <template>
-    <HomeHero/>
+    <div class="">
+        <HomeHero/>
     <HomeFeature/>
     <Banner label="Unlock the Power of" title="FutureTech Features" />
     <HomeFeatures/>
@@ -10,6 +11,8 @@
     <Banner label="What Our Readers Say" title="Real Words from Real Readers" />
     <HomeTestimonial/>
     <HomeCTA/>
+    </div>
+
 </template>
 
 <script setup>
