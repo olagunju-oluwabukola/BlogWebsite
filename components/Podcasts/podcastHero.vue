@@ -1,7 +1,7 @@
 <template>
   <section class=" text-white px-4 py-10">
     <div class="max-w-7xl mx-auto space-y-10">
- <div class="text-center md:text-left flex ">
+ <div class="text-center md:text-left md:flex  hidden">
         <h2 class=" md:text-5xl font-bold mb-2">Unlock the World of Artificial Intelligence through Podcasts
               <span class="text-gray-400 font-thin mx-auto md:mx-0 text-sm">
           Dive deep into the AI universe with our curated podcast series. Whether you're an enthusiast or a professional, AI podcasts are your gateway to innovation.

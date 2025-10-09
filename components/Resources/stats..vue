@@ -1,18 +1,26 @@
 <template>
   <section ref="sectionRef" class="bg-black text-white mb-6 py-10">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-4 gap-6">
-      <div
-        v-for="(stat, index) in stats"
-        :key="index"
-        class="text-center rounded-lg"
-      >
-        <p class="text-3xl font-bold text-yellow-400">
-          {{ Math.floor(stat.current) }}+
-        </p>
-        <p class="text-gray-400 mt-2">{{ stat.label }}</p>
+   <div class="grid grid-cols-4 gap-6 text-center md:text-left border-t border-gray-900 pt-3 px-4 md:px-28">
+        <div class="border-r border-gray-900 pr-6">
+      <p class="text-xl md:text-2xl font-semibold text-yellow-400">{{  Math.floor(stats[0].current)  }}k+</p>
+          <p class="text-gray-400 text-[10px] md:text-sm ">Resources available</p>
+        </div>
+        <div class="border-r border-gray-900 pr-6">
+          <p class="text-xl md:text-2xl font-semibold text-yellow-400">{{ Math.floor(stats[1].current / 1000) }}k+</p>
+          <p class="text-gray-400 text-[10px] md:text-sm">Total Downloads</p>
+        </div>
+        <div>
+          <p class="text-xl md:text-2xl font-semibold text-yellow-400">{{ Math.floor(stats[2].current / 1000) }}k+</p>
+          <p class="text-gray-400 text-[10px] md:text-sm">Active Users</p>
+        </div>
+
+         <div>
+          <p class="text-xl md:text-2xl font-semibold text-yellow-400">{{ Math.floor(stats[3].current / 1000) }}k+</p>
+          <p class="text-gray-400 text-[10px] md:text-sm">Access Our Content</p>
+        </div>
       </div>
-    </div>
-  </section>
+</section>
+
 </template>
 
 <script setup>
@@ -23,7 +31,7 @@ const stats = ref([
   { label: 'Resources Available', target: 300, current: 0 },
   { label: 'Total Downloads', target: 12000, current: 0 },
   { label: 'Active Users', target: 10000, current: 0 },
-  { label: 'Access Our Content', target: 1000, current: 0 }
+  { label: 'Access Our Content', target: 10000, current: 0 }
 ])
 
 const startCounting = () => {

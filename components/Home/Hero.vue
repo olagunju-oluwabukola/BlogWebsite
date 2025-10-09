@@ -1,6 +1,6 @@
 <template>
   <section class="text-white px-6 md:px-20 grid md:grid-cols-2 gap-12 items-center border-b border-gray-900" >
-   
+
     <div  class='border-r border-gray-900 '>
       <p class="text-[10px] md:text-[12px]  uppercase tracking-wide text-gray-400 mb-2 mt-10 md:mt-0">Your Journey to Tomorrow Begins Here</p>
       <h1 class="text-2xl md:text-3xl lg:text-5xl font-bold leading-tight mb-6">
@@ -12,21 +12,23 @@
         think, learn, and reshape the future.
       </p>
 
-      
-      <div class="grid grid-cols-3 gap-6 text-center md:text-left border-t border-gray-900 pt-3">
+<section ref="counterSection">
+   <div class="grid grid-cols-3 gap-6 text-center md:text-left border-t border-gray-900 pt-3">
         <div class="border-r border-gray-900 pr-6">
-          <p class="text-xl md:text-2xl font-semibold text-white">300<span class="text-yellow-400">+</span></p>
+      <p class="text-xl md:text-2xl font-semibold text-yellow-400">{{  Math.floor(stats[0].current)  }}k+</p>
           <p class="text-gray-400 text-[10px] md:text-sm ">Resources available</p>
         </div>
         <div class="border-r border-gray-900 pr-6">
-          <p class="text-xl md:text-2xl font-semibold text-white">12k<span class="text-yellow-400">+</span></p>
+          <p class="text-xl md:text-2xl font-semibold text-yellow-400">{{ Math.floor(stats[1].current / 1000) }}k+</p>
           <p class="text-gray-400 text-[10px] md:text-sm">Total Downloads</p>
         </div>
         <div>
-          <p class="text-xl md:text-2xl font-semibold text-white">10k <span class="text-yellow-400">+</span></p>
+          <p class="text-xl md:text-2xl font-semibold text-yellow-400">{{ Math.floor(stats[2].current / 1000) }}k+</p>
           <p class="text-gray-400 text-[10px] md:text-sm">Active Users</p>
         </div>
       </div>
+</section>
+
     </div>
 <div class="relative hidden md:block">
   <img
@@ -56,13 +58,14 @@
         </NuxtLink>
           </div>
         </div>
-        
+
       </div>
   </section>
 </template>
 
 
 <script setup>
+import { ref, onMounted, onBeforeUnmount } from 'vue'
 import avatar1 from '~/assets/images/hImg1.svg'
 import avatar2 from '~/assets/images/hImg2.svg'
 import avatar3 from '~/assets/images/hImg3.svg'
@@ -73,4 +76,48 @@ const avatars = [
   avatar3,
   avatar4
 ]
+
+const counterSection = ref(null)
+const stats = ref([
+  { target: 300, current: 0 },
+  { target: 12000, current: 0 },
+  { target: 10000, current: 0 }
+])
+
+let observer = null
+let hasAnimated = false
+
+const animateCounters = () => {
+  stats.value.forEach((stat) => {
+    const duration = 2000
+    const stepTime = 16
+    const increment = stat.target / (duration / stepTime)
+
+    const counter = setInterval(() => {
+      stat.current += increment
+      if (stat.current >= stat.target) {
+        stat.current = stat.target
+        clearInterval(counter)
+      }
+    }, stepTime)
+  })
+}
+
+onMounted(() => {
+  observer = new IntersectionObserver(
+    (entries) => {
+      if (entries[0].isIntersecting && !hasAnimated) {
+        hasAnimated = true
+        animateCounters()
+      }
+    },
+    { threshold: 0.3 }
+  )
+
+  if (counterSection.value) observer.observe(counterSection.value)
+})
+
+onBeforeUnmount(() => {
+  if (observer && counterSection.value) observer.unobserve(counterSection.value)
+})
 </script>

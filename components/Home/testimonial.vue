@@ -20,9 +20,9 @@
             </div>
           </div>
           <div class="flex mb-2">
-            <span v-for="i in 5" :key="i" class="text-yellow-400">&#9733;</span>
+            <span v-for="i in 5" :key="i" class="text-yellow-400">⭐</span>
           </div>
-          <p class="text-sm text-gray-300">{{ testimonial.feedback }}</p>
+          <p class="text-[10px] md:text-sm text-gray-300 text-justify">{{ testimonial.feedback }}</p>
         </div>
       </div>
     </div>

@@ -3,10 +3,10 @@
     <div class="grid md:grid-cols-2 gap-8 items-start">
       <div class="bg-[#111] p-6 rounded-lg">
         <h3 class="text-xl font-semibold mb-2">Ebooks</h3>
-        <p class="text-gray-400 mb-4">
+        <p class="text-gray-400 mb-4 text-[10px] md:text-sm ">
           Explore our collection of ebooks covering a wide spectrum of future technology topics.
         </p>
-        <button class="bg-yellow-400 text-black px-4 py-2 rounded hover:bg-yellow-300">
+        <button class="bg-yellow-400 text-black px-4 py-2 rounded hover:bg-yellow-300 font-semibold text-sm">
           {{ data.buttonLabel }}
         </button>
 
@@ -18,7 +18,7 @@
 
       <div class="bg-[#111] p-6 rounded-lg space-y-4">
         <h3 class="text-lg font-medium">Variety of Topics</h3>
-        <p class="text-sm text-gray-400">
+        <p class="text-[10px] text-justify md:text-sm text-gray-400 ">
           Topics include
           <span v-for="(topic, index) in data.ebooks.topics" :key="index">
             {{ topic.name }} ({{ topic.percentage }})<span v-if="index < data.ebooks.topics.length - 1">, </span>
