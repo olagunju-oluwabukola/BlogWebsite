@@ -6,7 +6,7 @@
           <img src='~/assets/images/Logo.svg' alt='logo' class="h-14 w-14 md:h-32 md:w-32"/>
       <div>
         <h2 class="text-xl md:text-4xl font-bold mb-6 mt-6">Be Part of the Future Tech Revolution</h2>
-      <p class="text-gray-400 mb-10 max-w-3xl mx-auto text-sm md:text-base">
+      <p class="text-gray-400 mb-10 max-w-3xl mx-auto text-[10px] md:text-base text-justify">
         Stay ahead of the curve with FutureTech. Explore our comprehensive resources, stay connected through community forums, and participate in exclusive events to shape tomorrow's innovations.
       </p>
       </div>
@@ -16,17 +16,17 @@
         <div class="bg-[#1e1e1e] p-6 rounded-lg text-left">
           <Icon name="uil:file-alt" class="text-yellow-400 text-3xl mb-4" />
           <h3 class="text-lg font-semibold mb-2">Resource Access</h3>
-          <p class="text-gray-400 text-sm">Explore our extensive library of resources, whitepapers, and tech briefs.</p>
+          <p class="text-gray-400 text-[10px] md:text-sm">Explore our extensive library of resources, whitepapers, and tech briefs.</p>
         </div>
         <div class="bg-[#1e1e1e] p-6 rounded-lg text-left">
           <Icon name="uil:users-alt" class="text-yellow-400 text-3xl mb-4" />
           <h3 class="text-lg font-semibold mb-2">Community Forums</h3>
-          <p class="text-gray-400 text-sm">Join discussions with fellow enthusiasts and experts across the globe.</p>
+          <p class="text-gray-400 text-[10px] md:text-sm">Join discussions with fellow enthusiasts and experts across the globe.</p>
         </div>
         <div class="bg-[#1e1e1e] p-6 rounded-lg text-left">
           <Icon name="uil:calender" class="text-yellow-400 text-3xl mb-4" />
           <h3 class="text-lg font-semibold mb-2">Tech Events</h3>
-          <p class="text-gray-400 text-sm">Stay updated on upcoming webinars, summits, and networking sessions.</p>
+          <p class="text-gray-400 text-[10px] md:text-sm">Stay updated on upcoming webinars, summits, and networking sessions.</p>
         </div>
       </div>
     </div>

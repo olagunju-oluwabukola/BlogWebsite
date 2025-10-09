@@ -1,6 +1,6 @@
 <template>
     <div>
-        <TopbarCta/>
+
         <appHeader />
             <slot />
         <appFooter />

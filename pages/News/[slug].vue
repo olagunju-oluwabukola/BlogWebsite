@@ -1,14 +1,14 @@
 <template>
-  <section class="p-10 text-white bg-black min-h-screen">
+  <section class="p-10 text-white bg-black md:min-h-screen">
      <NuxtLink to="/news" class="text-yellow-400 mb-4 block">← Back</NuxtLink>
 
     <div class="max-w-3xl mx-auto">
       <h1 class="text-md md:text-2xl font-bold mb-4 capitalize">{{ article?.title }}</h1>
-      <img :src="article?.image" class="w-full h-90 rounded-xl mb-6" />
+      <img :src="article?.image" class="w-full md:h-90 rounded-xl mb-6" />
       <p class="text-gray-400 mb-2 text-[10px] md:text-sm">Category: {{ article?.category }}</p>
       <p class="text-gray-400 mb-6 text-[10px] md:text-sm">Views: {{ article?.views }}  </p>
       <p class="text-gray-400 mb-6 text-[10px] md:text-sm">Comment: {{ article?.comments }}</p>
-      <p class="text-[10px] md:text-sm text-gray-400 leading-relaxed">{{ article.content  }} </p>
+      <p class="text-sm text-gray-400 leading-loose text-justify">{{ article.content  }} </p>
     </div>
   </section>
 </template>

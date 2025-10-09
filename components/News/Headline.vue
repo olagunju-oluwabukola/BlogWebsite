@@ -1,13 +1,13 @@
 <template>
   <section class="bg-black text-white py-12 px-6 md:px-20 space-y-12">
-    
+
   <section class="bg-black text-white">
     <div class="max-w-4xl ">
       <h1 class="text-4xl md:text-5xl font-bold leading-tight tracking-tight">
-        Today’s Headlines: Stay
+        Today’s Headlines: Stay  Informed.
       </h1>
-      <p class="mt-2 text-gray-400 text-sm md:text-base leading-relaxed">
-        <span class="text-lg md:text-4xl text-gray-300 font-bold ">Informed.</span>
+      <p class="mt-2 text-gray-400 text-sm md:text-base leading-relaxed text-justify">
+
         Explore the latest news from around the world. We bring you up-to-the-minute updates on the most significant events, trends, and stories. Discover the world through our news coverage.
       </p>
     </div>
@@ -32,7 +32,7 @@
           <span class="flex items-center gap-1 p-1 border border-gray-400 rounded-sm">
                 <Icon icon="uil:comment" class="text-base" />
                 {{ news.featured.comments }}
-              </span> 
+              </span>
           </div>
           <NuxtLink
             :to="`/news/${news.featured.slug}`"
